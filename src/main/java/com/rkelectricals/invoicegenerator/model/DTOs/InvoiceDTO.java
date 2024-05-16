@@ -1,6 +1,5 @@
 package com.rkelectricals.invoicegenerator.model.DTOs;
 
-import java.util.Date;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
@@ -15,13 +14,13 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class InvoiceDTO {
-	private String invoiceNumber;
-    private Date invoiceDate;
-    private ContactDetailsDTO sellerDetails;
-    private ContactDetailsDTO buyerDetails;
-    private List<ProductDTO> products;
-    private double totalAmount;
-    private double cgst;
-    private double sgst;
-    private double roundOff;
+	    private String invoiceNumber;
+	    private Long sellerDetailsId;
+	    private Long buyerDetailsId;
+	    private List<Long> productIds;
+	    private double totalAmount;
+	    private double cgst;
+	    private double sgst;
+	    private double roundOff;
+	    private String invoiceItems;
 }

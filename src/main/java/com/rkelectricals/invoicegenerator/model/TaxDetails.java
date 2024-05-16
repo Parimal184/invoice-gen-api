@@ -11,7 +11,6 @@
 //import lombok.Setter;
 //import lombok.ToString;
 //
-//@Entity
 //@Getter
 //@Setter
 //@NoArgsConstructor
@@ -19,14 +18,7 @@
 //@ToString
 //public class TaxDetails {
 //	
-//	@Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
-//	private double taxableValue;
-//	
-//	@OneToOne
-//	private HSNCode hsnCode;
-//	
+//	private double taxableValue;	
 //	private double stateTaxAmount;
 //    private double centralTaxAmount;
 //    private double totalTaxAmount;
