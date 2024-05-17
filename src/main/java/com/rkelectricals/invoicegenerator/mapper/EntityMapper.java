@@ -7,7 +7,7 @@ public class EntityMapper {
 
 	public static Invoice mapToEntity(InvoiceDTO invoiceDTO) {
 		return Invoice.builder().cgst(invoiceDTO.getCgst()).sgst(invoiceDTO.getSgst())
-				.totalAmount(invoiceDTO.getTotalAmount()).invoiceItems(invoiceDTO.getInvoiceItems()).build();
+				.totalAmount(invoiceDTO.getTotalAmount()).taxDetails(invoiceDTO.getTaxDetails()).build();
 
 	}
 

@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.rkelectricals.invoicegenerator.mapper.EntityMapper;
@@ -57,8 +59,8 @@ public class InvoiceServiceImpl implements InvoiceService {
 	}
 
 	@Override
-	public List<Invoice> getAllInvoices() {
-		return invoiceRepository.findAll();
+	public Page<Invoice> getAllInvoices(Pageable pageable) {
+		return invoiceRepository.findAll(pageable);
 	}
 
 	@Override
@@ -80,6 +82,11 @@ public class InvoiceServiceImpl implements InvoiceService {
 		int nextYear = currentYear + 1;
 		String financialYearPrefix = String.valueOf(currentYear).substring(2) + "-" + String.valueOf(nextYear).substring(2);
 		return financialYearPrefix;
+	}
+
+	@Override
+	public void deleteInvoice(Long id) {
+		invoiceRepository.deleteById(id);
 	}
 
 }

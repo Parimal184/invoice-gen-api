@@ -1,5 +1,7 @@
 package com.rkelectricals.invoicegenerator.model;
 
+import com.rkelectricals.invoicegenerator.model.DTOs.ContactDetailsDTO;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -38,4 +40,5 @@ public class ContactDetails {
     private String mobileNo;
 	@Column
     private Type type = Type.BUYER;
+	
 }

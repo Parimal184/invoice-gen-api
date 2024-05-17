@@ -3,6 +3,8 @@ package com.rkelectricals.invoicegenerator.service.Impls;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.rkelectricals.invoicegenerator.model.ContactDetails;
@@ -21,8 +23,18 @@ public class ContactDetailsServiceImpl implements ContactDetailsService {
 	}
 
 	@Override
-	public List<ContactDetails> getBuyerDetails() {
-		return contactDetailsRepository.findAll();
+	public Page<ContactDetails> getBuyerDetails(Pageable pageable) {
+		return contactDetailsRepository.findAll(pageable);
+	}
+
+	@Override
+	public ContactDetails updateBuyer(ContactDetails buyerDetails) {
+		return contactDetailsRepository.save(buyerDetails);
+	}
+
+	@Override
+	public void deleteBuyer(Long id) {
+		contactDetailsRepository.deleteById(id);
 	}
 	
 }

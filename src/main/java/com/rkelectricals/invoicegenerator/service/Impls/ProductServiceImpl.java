@@ -3,6 +3,8 @@ package com.rkelectricals.invoicegenerator.service.Impls;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.rkelectricals.invoicegenerator.model.Product;
@@ -21,8 +23,13 @@ public class ProductServiceImpl implements ProductService{
     }
 
 	@Override
-	public List<Product> getProducts() {
-		return productRepository.findAll();
+	public Page<Product> getProducts(Pageable pageable) {
+		return productRepository.findAll(pageable);
+	}
+
+	@Override
+	public void deleteProduct(Long id) {
+		productRepository.deleteById(id);
 	}
 
 }

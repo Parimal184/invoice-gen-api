@@ -22,5 +22,5 @@ public class InvoiceDTO {
 	    private double cgst;
 	    private double sgst;
 	    private double roundOff;
-	    private String invoiceItems;
+	    private String taxDetails;
 }

@@ -44,17 +44,17 @@ public class Invoice {
 	@CreationTimestamp
     private Date invoiceDate;
     
-    @ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private ContactDetails sellerDetails;
     
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private ContactDetails buyerDetails;
     
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Product> products;
     
     @Column(columnDefinition = "json")
-    private String invoiceItems;
+    private String taxDetails;
     
     @Column
     private double totalAmount;
