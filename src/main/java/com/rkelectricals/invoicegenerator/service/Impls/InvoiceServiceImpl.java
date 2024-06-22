@@ -16,7 +16,6 @@ import com.rkelectricals.invoicegenerator.model.DTOs.InvoiceDTO;
 import com.rkelectricals.invoicegenerator.repository.ContactDetailsRepository;
 import com.rkelectricals.invoicegenerator.repository.InvoiceRepository;
 import com.rkelectricals.invoicegenerator.repository.ProductRepository;
-import com.rkelectricals.invoicegenerator.service.ContactDetailsService;
 import com.rkelectricals.invoicegenerator.service.InvoiceService;
 
 @Service

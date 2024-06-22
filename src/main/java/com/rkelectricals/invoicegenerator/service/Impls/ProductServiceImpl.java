@@ -1,7 +1,5 @@
 package com.rkelectricals.invoicegenerator.service.Impls;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -30,6 +28,11 @@ public class ProductServiceImpl implements ProductService{
 	@Override
 	public void deleteProduct(Long id) {
 		productRepository.deleteById(id);
+	}
+
+	@Override
+	public Product updateProduct(Product product) {
+		return productRepository.save(product);
 	}
 
 }
