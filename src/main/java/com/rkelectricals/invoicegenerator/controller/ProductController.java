@@ -36,6 +36,7 @@ public class ProductController {
     public ResponseEntity<?> getProducts(@RequestParam(required = false, defaultValue = "0") Integer page,
 	        @RequestParam(required = false, defaultValue = "10") Integer size) {
     	Page<Product> products = productService.getProducts(PageRequest.of(page, size));
+    	System.out.println("products :"+ products.getContent());
         return new ResponseEntity<>(products, HttpStatus.OK);
     }
     

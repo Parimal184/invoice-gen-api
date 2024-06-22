@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import com.rkelectricals.invoicegenerator.utils.MathUtils;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -56,36 +58,32 @@ public class Invoice {
     private String taxDetails;
     
     @Column
-    private double totalAmount;
+    private Double totalAmount;
     
     @Column
-    private double cgst;
+    private Double cgst;
     
     @Column
-    private double sgst;
+    private Double sgst;
     
     @Column
-    private double roundOff;
+    private Double roundOff;
     
-    public void setTotalAmount(double totalAmount) {
-        this.totalAmount = roundToTwoDecimalPlaces(totalAmount);
-    }
 
-    public void setCgst(double cgst) {
-        this.cgst = roundToTwoDecimalPlaces(cgst);
+    public Double getTotalAmount() {
+    	return MathUtils.format(totalAmount);
     }
-
-    public void setSgst(double sgst) {
-        this.sgst = roundToTwoDecimalPlaces(sgst);
+    
+    public Double getCgst() {
+    	return MathUtils.format(cgst);
     }
-
-    public void setRoundOff(double roundOff) {
-        this.roundOff = roundToTwoDecimalPlaces(roundOff);
+    
+    public Double getSgst() {
+    	return MathUtils.format(sgst);
     }
-
-    private double roundToTwoDecimalPlaces(double value) {
-        DecimalFormat df = new DecimalFormat("#.##");
-        return Double.parseDouble(df.format(value));
+    
+    public Double getRoundOff() {
+    	return MathUtils.format(roundOff);
     }
     
 }

@@ -1,5 +1,7 @@
 package com.rkelectricals.invoicegenerator.model.DTOs;
 
+import com.rkelectricals.invoicegenerator.utils.MathUtils;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,11 +17,27 @@ public class ProductDTO {
 	private String productName;
 	private String hsnSac;
 	private int quantity;
-	private double rate;
+	private Double rate;
 	private String per;
-	private double amount;
-	private double cgst;
-	private double sgst;
-	private double roundOff;
-	private double totalAmount;
+	private Double amount;
+	private Double cgst;
+	private Double sgst;
+	private Double roundOff;
+	private Double totalAmount;
+	
+	public Double getCsgt() {
+    	return MathUtils.format(cgst != null ? cgst : 0.00);
+    }
+	
+	public Double getSgst() {
+    	return MathUtils.format(sgst != null ? sgst : 0.00);
+    }
+    
+	public Double getRate() {
+    	return MathUtils.format(rate != null ? rate : 0.00);
+    }
+	
+	public Double getAmount() {
+    	return MathUtils.format(amount != null ? amount : 0.00);
+    }
 }
