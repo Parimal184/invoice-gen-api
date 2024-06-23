@@ -1,0 +1,75 @@
+2024-06-23T14:54:57.181+05:30  INFO 14364 --- [invoice-generator] [restartedMain] c.r.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 17.0.6 with PID 14364 (D:\InvoiceGenerator\invoice-generator\target\classes started by ASUS in D:\InvoiceGenerator\invoice-generator)
+2024-06-23T14:54:57.185+05:30  INFO 14364 --- [invoice-generator] [restartedMain] c.r.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-06-23T14:54:57.257+05:30  INFO 14364 --- [invoice-generator] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T14:54:57.258+05:30  INFO 14364 --- [invoice-generator] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T14:54:58.388+05:30  INFO 14364 --- [invoice-generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T14:54:58.468+05:30  INFO 14364 --- [invoice-generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2024-06-23T14:54:59.485+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-23T14:54:59.497+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T14:54:59.497+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-23T14:54:59.563+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-23T14:54:59.564+05:30  INFO 14364 --- [invoice-generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2305 ms
+2024-06-23T14:54:59.738+05:30 DEBUG 14364 --- [invoice-generator] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-06-23T14:54:59.882+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T14:54:59.943+05:30  INFO 14364 --- [invoice-generator] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T14:54:59.979+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T14:55:00.228+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T14:55:00.257+05:30  INFO 14364 --- [invoice-generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T14:55:00.433+05:30  INFO 14364 --- [invoice-generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18e5b7b0
+2024-06-23T14:55:00.436+05:30  INFO 14364 --- [invoice-generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T14:55:00.480+05:30  WARN 14364 --- [invoice-generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T14:55:00.482+05:30  WARN 14364 --- [invoice-generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-23T14:55:01.732+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T14:55:01.844+05:30  INFO 14364 --- [invoice-generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T14:55:02.363+05:30  WARN 14364 --- [invoice-generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T14:55:02.513+05:30 DEBUG 14364 --- [invoice-generator] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2024-06-23T14:55:02.639+05:30 DEBUG 14364 --- [invoice-generator] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-23T14:55:02.685+05:30 DEBUG 14364 --- [invoice-generator] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-23T14:55:02.725+05:30 DEBUG 14364 --- [invoice-generator] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-23T14:55:03.043+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T14:55:03.051+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-23T14:55:03.132+05:30  INFO 14364 --- [invoice-generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-23T14:55:03.148+05:30  INFO 14364 --- [invoice-generator] [restartedMain] c.r.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 6.534 seconds (process running for 7.263)
+2024-06-23T14:55:10.394+05:30  INFO 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T14:55:10.394+05:30  INFO 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T14:55:10.394+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-23T14:55:10.394+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-23T14:55:10.395+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-23T14:55:10.396+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3f7a6c0b
+2024-06-23T14:55:10.396+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@12d59088
+2024-06-23T14:55:10.396+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-23T14:55:10.396+05:30  INFO 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T14:55:10.414+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/Invoice/GetInvoices", parameters={}
+2024-06-23T14:55:10.423+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.rkelectricals.invoicegenerator.controller.InvoiceController#getAllInvoices(Integer, Integer)
+2024-06-23T14:55:10.447+05:30  WARN 14364 --- [invoice-generator] [http-nio-8080-exec-2] c.r.i.controller.InvoiceController       : Start getAllInvoices :
+2024-06-23T14:55:10.624+05:30  WARN 14364 --- [invoice-generator] [http-nio-8080-exec-2] c.r.i.controller.InvoiceController       : End getAllInvoices :
+2024-06-23T14:55:10.673+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-23T14:55:10.675+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.rkelectricals.invoicegenerator.model.Invoice instances]
+2024-06-23T14:55:10.736+05:30 DEBUG 14364 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-23T14:57:41.519+05:30  INFO 12264 --- [invoice-generator] [main] c.r.i.InvoiceGeneratorApplicationTests   : Starting InvoiceGeneratorApplicationTests using Java 17.0.6 with PID 12264 (started by ASUS in D:\InvoiceGenerator\invoice-generator)
+2024-06-23T14:57:41.521+05:30  INFO 12264 --- [invoice-generator] [main] c.r.i.InvoiceGeneratorApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-06-23T14:57:41.570+05:30 DEBUG 12264 --- [invoice-generator] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@a10c1b5
+2024-06-23T14:57:43.096+05:30  INFO 12264 --- [invoice-generator] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T14:57:43.204+05:30  INFO 12264 --- [invoice-generator] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2024-06-23T14:57:44.309+05:30  INFO 12264 --- [invoice-generator] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T14:57:44.429+05:30  INFO 12264 --- [invoice-generator] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T14:57:44.512+05:30  INFO 12264 --- [invoice-generator] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T14:57:45.061+05:30  INFO 12264 --- [invoice-generator] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T14:57:45.120+05:30  INFO 12264 --- [invoice-generator] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T14:57:45.409+05:30  INFO 12264 --- [invoice-generator] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@795faad
+2024-06-23T14:57:45.414+05:30  INFO 12264 --- [invoice-generator] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T14:57:45.477+05:30  WARN 12264 --- [invoice-generator] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T14:57:45.479+05:30  WARN 12264 --- [invoice-generator] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-23T14:57:46.881+05:30  INFO 12264 --- [invoice-generator] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T14:57:46.992+05:30  INFO 12264 --- [invoice-generator] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T14:57:48.013+05:30  WARN 12264 --- [invoice-generator] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T14:57:48.215+05:30 DEBUG 12264 --- [invoice-generator] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2024-06-23T14:57:48.527+05:30 DEBUG 12264 --- [invoice-generator] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-23T14:57:48.608+05:30 DEBUG 12264 --- [invoice-generator] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-23T14:57:48.672+05:30 DEBUG 12264 --- [invoice-generator] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-23T14:57:49.413+05:30  INFO 12264 --- [invoice-generator] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-23T14:57:49.537+05:30  INFO 12264 --- [invoice-generator] [main] c.r.i.InvoiceGeneratorApplicationTests   : Started InvoiceGeneratorApplicationTests in 8.434 seconds (process running for 10.04)
+2024-06-23T14:57:50.699+05:30 DEBUG 12264 --- [invoice-generator] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@a10c1b5, started on Sun Jun 23 14:57:41 IST 2024
+2024-06-23T14:57:50.707+05:30  INFO 12264 --- [invoice-generator] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T14:57:50.712+05:30  INFO 12264 --- [invoice-generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T14:57:50.725+05:30  INFO 12264 --- [invoice-generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

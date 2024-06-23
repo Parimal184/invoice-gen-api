@@ -20,9 +20,12 @@ import com.rkelectricals.invoicegenerator.model.Invoice;
 import com.rkelectricals.invoicegenerator.model.DTOs.InvoiceDTO;
 import com.rkelectricals.invoicegenerator.service.InvoiceService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/api/Invoice")
 @CrossOrigin("*")
+@Slf4j
 public class InvoiceController {
 	
     @Autowired
@@ -41,7 +44,9 @@ public class InvoiceController {
     @GetMapping("/GetInvoices")
     public ResponseEntity<?> getAllInvoices(@RequestParam(required = false, defaultValue = "0") Integer page,
 	        @RequestParam(required = false, defaultValue = "10") Integer size) {
+    	log.warn("Start getAllInvoices :");
     	Page<Invoice> invoices = invoiceService.getAllInvoices(PageRequest.of(page, size));
+    	log.warn("End getAllInvoices :");
         return new ResponseEntity<>(invoices, HttpStatus.OK);
     }
 

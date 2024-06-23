@@ -59,7 +59,7 @@ public class InvoiceServiceImpl implements InvoiceService {
 
 	@Override
 	public Page<Invoice> getAllInvoices(Pageable pageable) {
-		return invoiceRepository.findAll(pageable);
+		return invoiceRepository.findAllByOrderByInvoiceDateDesc(pageable);
 	}
 
 	@Override
